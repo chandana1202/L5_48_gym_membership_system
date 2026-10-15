@@ -1,0 +1,35 @@
+# Issues Found Before Static Code Analysis Fixes
+
+## 1. Pylint Issues
+
+* Missing module and function docstrings.
+* Naming convention violations.
+* Mutable default argument.
+* Bare except statement.
+* Unnecessary comparison with None.
+* Unused variables and imports.
+* Use of eval(), which can execute arbitrary expressions.
+* Missing final newline.
+* Code formatting and readability issues.
+
+## 2. Bandit Security Issues
+
+* B110: Try-except-pass — exceptions were silently ignored.
+* B307: Use of eval() — potential arbitrary code execution.
+* B324: Use of MD5 — weak cryptographic hash algorithm.
+* B311: Use of random for security-sensitive values.
+* B605: Use of os.system() — potential command execution risk.
+* B105: Hardcoded password or secret.
+
+## 3. Flake8 Issues
+
+* Unused imports.
+* Lines exceeding the recommended maximum length.
+* Bare except statement.
+* Unused variables.
+* Unnecessary comparison with None.
+* Missing final newline.
+
+## Conclusion
+
+Static analysis identified code-quality, formatting, and security issues in the original gym membership program. The code was improved, and the analysis tools were run again to verify the changes.
