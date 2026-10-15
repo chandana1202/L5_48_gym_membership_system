@@ -26,7 +26,6 @@ members = {
 }
 
 
-
 def register_member(m_id, name, plan, months, member_log=None):
     """Register a new gym member and record the registration."""
     if m_id in members or months <= 0:
